@@ -1,10 +1,10 @@
-// import React from "react";
-// import axios from "axios";
-// function GetData1({ setValue }) {
+import React from "react";
+import useCustom from "./Custom";
 
-//         let Home = () => {
-//           let { data } = useCustom("https://jsonplaceholder.typicode.com/todos");
-//           console.log(data);
-//         }
-// }
-// export default GetData1;
+const Child1 = ({ value }) => {
+    const data = useCustom("https://jsonplaceholder.typicode.com/todos");
+    return (
+        <button onClick={()=> value(data)}>click</button>
+    )
+};
+export default Child1;

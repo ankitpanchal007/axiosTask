@@ -1,23 +1,23 @@
-import GetData from "./child";
-import { useState } from "react";
+// import GetData from "./child";
+// import { useState } from "react";
 
-function Parent() {
-    const [value, setValue] = useState([]);
+// function Parent() {
+//     const [value, setValue] = useState([]);
 
-    return (
-        <>
-            <GetData setValue={setValue} />
-            {value.map(Value =>
-                <p>userID: {Value.userId},
-                    id: {Value.id},
-                    title: {Value.title} ,
-                    completed: {Value.completed}
-                </p>
+//     return (
+//         <>
+//             <GetData value={setValue} />
+//             {setValue.map(item =>
+//                 <p>userID: {item.userId},
+//                     id: {item.id},
+//                     title: {item.title} ,
+//                     completed: {item.completed}
+//                 </p>
 
-            )}
-        </>
-    )
+//             )}
+//         </>
+//     )
 
-}
+// }
 
-export default Parent;
+// export default Parent;
